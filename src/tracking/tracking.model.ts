@@ -1,0 +1,43 @@
+import * as mongoose from 'mongoose';
+
+export interface Tracking extends mongoose.Document {
+    dDateT: Date;
+    dHourT: String;
+    sCreativeIdT: String;
+    sCreativeTypeT: String;
+    sLpIdT: String;
+    sSourceT: String;
+    sSubId1T: String;
+    sSubId2T: String;
+    sSubId3T: String;
+    sSubId4T: String;
+    sSubId5T: String;
+    parentOfferId: String;
+    parentOfferCreativeId: String;
+    sCountryT: String;
+    nClicksT: Number;
+    nCpaPxlT: Number;
+    nCpaCostsT: Number;
+    nCpaCostsNrT: Number;
+    nCplPxlT: Number;
+    nCplCostsT: Number;
+    nCplCostsNrT: Number;
+    nCpcCostsT: Number;
+    nCpcCostsNrT: Number;
+    nRevenuePxlT: Number;
+    nRsCostsT: Number;
+    nRsCostsNrT: Number;
+    sParentReferralIdT: String;
+    nReferralCpaT: Number;
+    nReferralCpcT: Number;
+    nReferralCplT: Number;
+    nBrandIdT: String;
+    sCategoryT: String;
+    sTrackingDomain: String;
+    testSales: Boolean;
+    skipDelete: Boolean;
+    trackLastModifiedBy: String;
+    trackLastModifiedOn: Date;
+    trackCreatedon: Date;
+    trackCreatedby: String;
+}
